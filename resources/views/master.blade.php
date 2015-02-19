@@ -21,6 +21,8 @@
 
 	@yield('content')
 
+    @include('partials.footer')
+
     @yield('footer')
 
 	<!-- Scripts -->
