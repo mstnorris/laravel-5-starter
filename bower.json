@@ -1,0 +1,20 @@
+{
+  "name": "laravel-starter",
+  "version": "0.0.0",
+  "homepage": "https://github.com/mstnorris/laravel-starter",
+  "authors": [
+    "Michael Norris <mike@michaelnorris.co.uk>"
+  ],
+  "moduleType": [
+    "node"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "vendor/bower_components",
+    "test",
+    "tests"
+  ]
+}

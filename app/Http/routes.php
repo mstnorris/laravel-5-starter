@@ -15,6 +15,10 @@ Route::get('/', 'WelcomeController@index');
 
 Route::get('home', 'HomeController@index');
 
+Route::get('login', ['as' => 'login_path', 'uses' => 'Auth\AuthController@getLogin']);
+Route::get('register', ['as' => 'register_path', 'uses' => 'Auth\AuthController@getRegister']);
+Route::get('logout', ['as' => 'logout_path', 'uses' => 'Auth\AuthController@getLogout']);
+
 Route::controllers([
 	'auth' => 'Auth\AuthController',
 	'password' => 'Auth\PasswordController',
