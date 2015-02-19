@@ -6537,3 +6537,6 @@ button.close {
 
 .fa-medium:before {
   content: "\f23a"; }
+
+body {
+  padding-top: 70px; }
