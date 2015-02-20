@@ -10,7 +10,6 @@ class DatabaseSeeder extends Seeder {
      * @var array
      */
     private $tables = array(
-        'article_tag',
         'permission_role',
         'permissions',
         'role_user',
@@ -33,5 +32,15 @@ class DatabaseSeeder extends Seeder {
         
 		// $this->call('UserTableSeeder');
 	}
+
+	public function cleanDatabase()
+    {
+
+        DB::statement('SET FOREIGN_KEY_CHECKS=0');
+        foreach ($this->tables as $table) {
+            DB::table($table)->truncate();
+        }
+        DB::statement('SET FOREIGN_KEY_CHECKS=1');
+    }
 
 }
