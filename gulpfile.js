@@ -11,6 +11,10 @@ elixir(function(mix) {
         'resources/assets/sass/font-awesome'
     )
         .copy(
+        'vendor/bower_components/font-awesome-sass/assets/fonts/',
+        'public/fonts'
+    )
+        .copy(
         'vendor/bower_components/animate-sass/',
         'resources/assets/sass/animate'
     )
